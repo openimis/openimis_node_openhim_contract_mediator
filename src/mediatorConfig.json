@@ -1,0 +1,36 @@
+
+{
+    "urn": "urn:mediator:Contract mediator",
+    "version": "1.0.0",
+    "name": "Contract Mediator",
+    "description": "Contract mediator",
+    "defaultChannelConfig": [
+      {
+        "name": "Contract mediator",
+        "urlPattern": "^/Contract",
+        "routes": [
+          {
+            "name": "Contract route",
+            "host": "localhost",
+            "path": "/",
+            "port": "3016",
+            "primary": true,
+            "type": "http"
+          }
+        ],
+        "allow": ["admin"],
+        "methods": ["GET", "POST","PUT","DELETE"],
+        "type": "http"
+      }
+    ],
+    "endpoints": [
+      {
+        "name": "Contract endpoint",
+        "host": "localhost",
+        "path": "/",
+        "port": "3016",
+        "primary": true,
+        "type": "http"
+      }
+    ]
+  }
